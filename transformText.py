@@ -9,30 +9,16 @@ from pattern.fr import singularize, pluralize, conjugate, tenses, lemma, \
 from fixWords import correct_grammar, fix_agreements, fix_word
 from pprint import pprint
 
-# sourcefile = 'FlaubertMadameBovary.txt'
-# sourcefile = 'BaudelaireEnivrez.txt'
-# focus1 = 'homme'
-# focus2 = 'femme'
-# focus1 = 'boire'
-# focus2 = 'dormir'
-
-# focus1 = sys.argv[1]
-# focus2 = sys.argv[2]
-# sourcefile = sys.argv[3]
 sourcefile = '/Users/mark/Research/2018 ELO/Extrait_Balzac.txt'
 focus1 = 'homme'
 focus2 = 'femme'
 
-# w2vfile = 'ARTFLmodel'
-# pklf = 'pos_dict.pkl'
-w2vfile = '/Users/mark/Research/2018 ELO/Sand_model'
-pklf = '/Users/mark/Research/2018 ELO/Sand_pos_dict.pkl'
+w2vfile = 'Sand_model'
+pklf = 'Sand_pos_dict.pkl'
 
 pickleFile = open(pklf, 'rb')
 pd = pickle.load(pickleFile)
-# pprint(pd)
 
-# pos_pattern = { 'JJ', 'JJR', 'JJS', 'NN', 'NNS', 'RB', 'RBR', 'RBS', 'VB', 'NNP', 'NNPS' }
 pos_tt = { 'ABR', 'ADJ', 'ADV', 'NOM', 'VER:cond', 'VER:futu', 'VER:impe',
 	'VER:impf', 'VER:infi', 'VER:pper', 'VER:ppre', 'VER:pres', 'VER:simp',
 	'VER:subi', 'VER:subp' }
@@ -47,8 +33,6 @@ text = parsetree(sourcetext, relations = True, lemmata = True)
 
 for sentence in text:
 	newsentence = list()
-#	print sentence.string.encode('utf-8')
-#	print('-------')
 	parsed = tagger.tag_text(sentence.string)
 	for word in parsed:
 		[ mot, pos, lemma ] = fix_word(word.split('\t'))
@@ -73,10 +57,4 @@ for sentence in text:
 	processed = processed.replace(" , ", ", ")
 	processed = processed.replace(" .", ".")
 	processed = re.sub(r" -(\w)", r"-\1", processed)
-#	processed = re.sub('\' ', '\'', processed)
-#	processed = re.sub(' n ', ' ne ', processed)
-#	processed = re.sub('([Qq])ue ([aeiouh\xe9\xe8\xe0])', r"\1u'\2", processed)
-#	processed = re.sub("'([^aeiouh\xe9\xe8\xe0])", r'e \1', processed)
-#	print('-------')
 	print(processed.encode('utf-8'))
-#	print('=======')
