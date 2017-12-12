@@ -5,8 +5,9 @@ import os, treetaggerwrapper, pickle, re
 sourcedir = ''
 # This should be the path to a directory containing plain text versions
 # (in UTF-8) of the corpus documents for the vector space model of words.
+# I'd share my Sand corpus but I don't have permission to do so.
 
-targetdir = 'processed_texts'
+targetdir = ''
 # This should be a path for pkl files derived from the docs in sourcedir.
 # These files will be used to construct the vector space model of words.
 
