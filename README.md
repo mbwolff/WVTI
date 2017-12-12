@@ -1,12 +1,12 @@
 # Word Vector Text Modulator 2
 Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016)
 
-This repository contains the code and data necessary to generate _Madame Bovary modulée_, a novel based on the text by Flaubert but modified with word vectors derived from over 1300 nineteenth-century French texts.
+This repository contains the code and data necessary to generate _Balzac_modulé_par_Sand_, an excerpt from Balzac's _Le Père Goriot_  modified with word vectors derived from sixty-nine texts written by George Sand.
 
-Run the following command to produce the novel:
+Run the following command to produce the modulated text:
 
 ```
-./transformText.py homme femme FlaubertMadameBovary.txt > MadameBovaryModulée.txt
+./transformText.py > Balzac_modulé_par_Sand.txt
 ```
 
 This command will produce an interesting variation on Baudelaire's prose poem _Enivrez-vous!_:
