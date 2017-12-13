@@ -6,13 +6,13 @@ This repository contains the code and data necessary to generate _Enivrez-vous_m
 Run the following command to produce a modulated text:
 
 ```
-./transformText.py bénir maudire Balzac Baudelaire_Enivrez-vous.txt
+./transformText.py bénir maudire Balzac Baudelaire_Enivrez-vous.md
 ```
 
 You can perform a comparable modulation with a word vector model based on 69 texts written by George Sand:
 
 ```
-./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.txt
+./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.md
 ```
 
 (In this repository the only options for word vector models are "Balzac" and "Sand": anything else will produce an error.)
