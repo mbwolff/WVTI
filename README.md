@@ -3,11 +3,19 @@ Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGe
 
 This repository contains the code and data necessary to generate _Enivrez-vous_modulé_, Baudelaire's prose poem modified with word vectors derived from 117 texts written by Honoré de Balzac.
 
-Run the following command to produce the modulated text:
+Run the following command to produce a modulated text:
 
 ```
-./transformText.py riche pauvre Baudelaire_Enivrez-vous.txt
+./transformText.py bénir maudire Balzac Baudelaire_Enivrez-vous.txt
 ```
+
+You can perform a comparable modulation with word vector model based on 69 texts written by George Sand:
+
+```
+./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.txt
+```
+
+(In this repository the only options for word vector models are "Balzac" and "Sand": anything else will produce an error.)
 
 ### A quick explanation of what's under the hood
 
