@@ -1,7 +1,7 @@
 # Word Vector Text Modulator 2
 Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016)
 
-This repository contains the code and data necessary to generate _Balzac_modulé_par_Sand_, an excerpt from Balzac's _Le Père Goriot_  modified with word vectors derived from sixty-nine texts written by George Sand.
+This repository contains the code and data necessary to generate _Enivrez-vous_modulé_, Baudelaire's prose poem modified with word vectors derived from 117 texts written by Honoré de Balzac.
 
 Run the following command to produce the modulated text:
 
