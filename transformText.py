@@ -9,12 +9,13 @@ from pattern.fr import singularize, pluralize, conjugate, tenses, lemma, \
 from fixWords import correct_grammar, fix_agreements, fix_word
 from pprint import pprint
 
-sourcefile = 'Extrait_Balzac.txt'
-focus1 = 'homme'
-focus2 = 'femme'
+focus1 = sys.argv[1].decode(sys.getfilesystemencoding())
+focus2 = sys.argv[2].decode(sys.getfilesystemencoding())
+corpus = sys.argv[3].decode(sys.getfilesystemencoding())
+sourcefile = sys.argv[4]
 
-w2vfile = 'Sand_model'
-pklf = 'Sand_pos_dict.pkl'
+w2vfile = corpus + '_model'
+pklf = corpus + '_pos_dict.pkl'
 
 pickleFile = open(pklf, 'rb')
 pd = pickle.load(pickleFile)
