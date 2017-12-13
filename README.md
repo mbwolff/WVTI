@@ -6,7 +6,7 @@ This repository contains the code and data necessary to generate _Enivrez-vous_m
 Run the following command to produce the modulated text:
 
 ```
-./transformText.py > Balzac_modulé_par_Sand.txt
+./transformText.py riche pauvre Baudelaire_Enivrez-vous.txt
 ```
 
 ### A quick explanation of what's under the hood
