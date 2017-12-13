@@ -9,7 +9,7 @@ Run the following command to produce a modulated text:
 ./transformText.py bénir maudire Balzac Baudelaire_Enivrez-vous.txt
 ```
 
-You can perform a comparable modulation with word vector model based on 69 texts written by George Sand:
+You can perform a comparable modulation with a word vector model based on 69 texts written by George Sand:
 
 ```
 ./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.txt
