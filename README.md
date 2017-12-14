@@ -11,7 +11,7 @@ The following command
 
 will produce [this text](Enivrez-vous_modulé_par_Balzac_corrigé.md).
 
-You can perform a comparable modulation with a word vector model based on 69 texts written by George Sand:
+You can perform [a comparable modulation](Enivrez-vous_modulé_par_Sand_corrigé.md) with a word vector model based on 69 texts written by George Sand:
 
 ```
 ./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.md
