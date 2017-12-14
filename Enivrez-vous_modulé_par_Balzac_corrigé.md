@@ -1,4 +1,4 @@
-(The text below is based on [the output of _transformText.py_](Enivrez-vous_modulé_par_Balzac.md) and edited for grammar.)
+**The text below is based on [the output of _transformText.py_](Enivrez-vous_modulé_par_Balzac.md) and edited for grammar.**
 
 Il faut être encore timide. Tout devient là : ce devient la future circonstance. Pour ne nullement irriter l’affreux cerveau du Temps qui balance vos poitrines et vous affaisse vers le sol, il faut vous apaiser sans narrateur.
 
