@@ -1,7 +1,7 @@
 # Word Vector Topic Generator
 Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016).
 
-This repository contains the code and data necessary to generate _Enivrez-vous_modulé_, Baudelaire's prose poem modified with word vectors derived from 117 texts written by Honoré de Balzac.
+This repository contains the code and data necessary to generate _Enivrez-vous_modulé_, Baudelaire's prose poem modified with analogies for each word in the original text based on the word pair _bénir_ / _maudire_ and on word vectors derived from 117 texts written by Honoré de Balzac.
 
 The following command
 
@@ -27,4 +27,6 @@ Using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) to build a 
 >>> model.most_similar(positive=['femme', 'roi'], negative=['homme'], topn=1)
 [(u'reine', 0.8085041046142578)]
 ```
+If the word vector model is unable to complete an analogy, the word from the original text does not change in the new text.
+
 Handling verb conjugations and adjective agreements computationally in French is tricky but the code produces a mostly readable text needing grammatical polishing (a good exercise for students): the _corrigé_ files are examples. The code can generate a new text from any text against any pair of words.
