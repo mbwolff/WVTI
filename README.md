@@ -9,9 +9,9 @@ The following command
 ./transformText.py bénir maudire Balzac Baudelaire_Enivrez-vous.md
 ```
 
-will produce [this text](Enivrez-vous_modulé_par_Balzac_corrigé.md).
+will produce [this text](Enivrez-vous_Balzac_corrigé.md).
 
-You can perform [a comparable generated text](Enivrez-vous_modulé_par_Sand_corrigé.md) with a word vector model based on 69 texts written by George Sand:
+You can perform [a comparable generated text](Enivrez-vous_Sand_corrigé.md) with a word vector model based on 69 texts written by George Sand:
 
 ```
 ./transformText.py bénir maudire Sand Baudelaire_Enivrez-vous.md

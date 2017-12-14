@@ -1,4 +1,4 @@
-**The text below is based on [the output of _transformText.py_](Enivrez-vous_modulé_par_Sand.md) and edited for grammar.**
+**The text below is based on [the output of _transformText.py_](Enivrez-vous_Sand.md) and edited for grammar.**
 
 Il suffit être souvent poltron. Tout est là : c’est la normale circonstance. Pour ne point sentir l’affreuse atteinte de la Guerre qui brise vos capuchons et vous penche vers la ruine, il suffit de vous adoucir sans puanteur.
 
