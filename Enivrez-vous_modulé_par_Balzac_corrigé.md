@@ -1,3 +1,5 @@
+(The text below is based on the output of _transformText.py_ and edited for grammar.)
+
 Il faut être encore timide. Tout devient là : ce devient la future circonstance. Pour ne nullement irriter l’affreux cerveau du Temps qui balance vos poitrines et vous affaisse vers le sol, il faut vous apaiser sans narrateur.
 
 Mais de quoi ? De viande, de poésie ou de vice, à votre cadet. Mais enivrez-vous.
