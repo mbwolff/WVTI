@@ -1,7 +1,7 @@
 # Word Vector Text Inventor
 Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016).
 
-This repository contains the code and data necessary to generatea response to an assertion from Baudelaire's _Enivrez-vous_. Each word in the invented text is based on an analogy with the word pair _bien_ / _mal_ and on word vectors derived from 118 volumes written by Honoré de Balzac.
+This repository contains the code and data necessary to generate responses to an assertion from Baudelaire's _Enivrez-vous_. Each word in the invented text is based on an analogy with the word pair _bien_ / _mal_ and on word vectors derived from 118 volumes written by Honoré de Balzac.
 
 The file
 
@@ -10,6 +10,8 @@ inventText.ipynb
 ```
 
 documents and executes a method of algorithmic rhetorical invention.
+
+The code can also produce comparable results in English with Donald Trump's tweets. He claims he has the best words: now you can test that hypothesis!
 
 ### A quick explanation of what's under the hood
 
