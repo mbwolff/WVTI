@@ -1,7 +1,10 @@
+# Based on code by Lynn Cherny
+# https://github.com/arnicas/word2vec-pride-vis/blob/master/tsne_code.R
+
 # Code borrowed and modified to fit my data and run in RStudio:
 # http://www.codeproject.com/Tips/788739/Visualization-of-High-Dimensional-Data-using-t-SNE
 
-data_for_r <- read.delim("Trump_tsne.tsv", header=FALSE)
+data_for_r <- read.delim("NCF_short_author_Balzac_tsne.tsv", header=FALSE)
 
 # a little cleaning, just in case
 mydata <- unique(data_for_r)
