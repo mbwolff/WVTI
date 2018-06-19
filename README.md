@@ -1,7 +1,7 @@
 # Word Vector Text Inventor
 Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016).
 
-This repository contains the code and data necessary to generate responses to an assertion from Baudelaire's _Enivrez-vous_. Each word in the invented text is based on an analogy with the word pair _bien_ / _mal_ and on word vectors derived from 118 volumes written by Honoré de Balzac.
+This repository contains the code and data necessary to invent responses to an assertion from Baudelaire's _Enivrez-vous_. Each word in the invented text is based on an analogy with the word pair _bien_ / _mal_ and on word vectors derived from 30 volumes written by Gustave Flaubert.
 
 The file
 
