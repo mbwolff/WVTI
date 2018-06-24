@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Based on code by Radim Řehůřek
+# Based on code by Radim Rehurek
 # https://rare-technologies.com/word2vec-tutorial/
 
 import os, re, logging, gensim, re, io, pickle
@@ -9,7 +9,8 @@ from six import iteritems
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 ### globals
-sourcedir = '../Trump_pickled'
+#sourcedir = '../Trump_pickled'
+sourcedir = '../../WVTM for ELO 2018/FT_pickled'
 saved = re.sub('pickled$', 'model', sourcedir)
 
 ### functions and classes
