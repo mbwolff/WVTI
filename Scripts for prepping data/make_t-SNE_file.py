@@ -7,8 +7,8 @@
 
 import os, pickle, re, csv, gensim
 
-datadictfile = '../Trump_pos_dict.pkl'
-modelfile = '../Trump_model'
+datadictfile = '../NCF_pos_dict.pkl'
+modelfile = '../../WVTM for ELO 2018/NCF_model'
 
 filelabel = re.sub('_model$', '', modelfile)
 
@@ -53,7 +53,7 @@ def make_score_files(model, datadict, filelabel):
         'SYM': 'SYM',
         'UH': 'INTJ'
     }
-    
+
     with open(filelabel + '_tsne.tsv', 'w') as tsnefile:
         for word in datadict.keys():
             try:

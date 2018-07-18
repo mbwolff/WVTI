@@ -5,11 +5,13 @@
 # http://www.codeproject.com/Tips/788739/Visualization-of-High-Dimensional-Data-using-t-SNE
 # Second column contains POS descriptor
 
-data_for_r <- read.delim("Trump_tsne.tsv", header=FALSE)
+data_for_r <- read.delim("NCF_short_author_Flaubert_tsne.tsv", header=FALSE)
+#data_for_r <- read.delim("../WVTM for ELO 2018/NCF_tsne.tsv", header=FALSE)
 
 color=c("#114477", "#4477AA", "#77AADD", "#117755", "#44AA88", "#99CCBB",
         "#777711", "#AAAA44", "#DDDD77", "#771111", "#AA4444", "#DD7777",
         "#771144", "#AA4477", "#DD77AA")
+
 fr_pos=c("ADV", "NOUN", "ADP", "NUM", "SCONJ", "PROPN", "DET", "INTJ", "PUNCT",
       "VERB", "AUX", "CCONJ", "X", "PRON", "ADJ")
 en_pos=c("ADV", "NOUN", "ADP", "PUNCT", "PROPN", "DET", "SYM", "INTJ", "PRON",
@@ -18,6 +20,7 @@ en_pos=c("ADV", "NOUN", "ADP", "PUNCT", "PROPN", "DET", "SYM", "INTJ", "PRON",
 # a little cleaning, just in case
 mydata <- unique(data_for_r)
 mydata <- na.omit(mydata)
+#mydata = subset(mydata, !grepl("^[0-9]", V1))
 row.names(mydata) <- mydata$V1
 
 library(Rtsne)
@@ -32,5 +35,5 @@ rtsne_out <- Rtsne(
   verbose=TRUE)
 
 plot(rtsne_out$Y, t="n", main="BarnesHut t-SNE")
-#text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata[,2], fr_pos)])
-text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata[,2], en_pos)])
+text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, fr_pos)])
+#text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, en_pos)])
