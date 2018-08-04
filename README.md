@@ -11,7 +11,7 @@ inventText.ipynb
 
 documents and executes a method of algorithmic rhetorical invention.
 
-The code can also produce comparable results in English with the nearly [three million tweets by Russian trolls] (https://github.com/mbwolff/russian-troll-tweets) posted by [FiveThirtyEight](https://fivethirtyeight.com).
+The code can also produce comparable results in English with the nearly [3,000,000 tweets by Russian trolls](https://github.com/mbwolff/russian-troll-tweets) posted by [FiveThirtyEight](https://fivethirtyeight.com).
 
 ### A quick explanation of what's under the hood
 
