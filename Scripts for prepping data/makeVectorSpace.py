@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 ### globals
 #sourcedir = '../Trump_pickled'
-sourcedir = '../../WVTM for ELO 2018/FT_pickled'
+sourcedir = '../Russians_pickled'
 saved = re.sub('pickled$', 'model', sourcedir)
 
 ### functions and classes
