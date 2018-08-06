@@ -11,7 +11,7 @@ inventText.ipynb
 
 documents and executes a method of algorithmic rhetorical invention.
 
-The code can also produce comparable results in English with Donald Trump's tweets. He claims he has the best words: now you can test that hypothesis!
+The code can also produce comparable results in English with the nearly [3,000,000 tweets by Russian trolls](https://github.com/fivethirtyeight/russian-troll-tweets) collected by [FiveThirtyEight](https://fivethirtyeight.com).
 
 ### A quick explanation of what's under the hood
 
@@ -22,5 +22,3 @@ Using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) to build a 
 [(u'reine', 0.8085041046142578)]
 ```
 If the word vector model is unable to complete an analogy, the word from the asserted text does not change in the invented text.
-
-Handling verb conjugations and adjective agreements computationally in French is tricky but the code produces a mostly readable text needing grammatical polishing (a good exercise for students). The code can generate a response to any asserted text with any pair of words.
