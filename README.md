@@ -1,5 +1,5 @@
 # Word Vector Text Inventor
-Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016), and formally dubbed WVTG (Word Vector Topic Generator). This is a hack in progress I will present at the [2018 ELO conference](https://sites.grenadine.uqam.ca/sites/nt2/en/elo2018/schedule/444/Algorithmic+Invention).
+Based on [WVTM](https://github.com/mbwolff/WVTM), a contribution to [2016 NaNoGenMo](https://github.com/NaNoGenMo/2016), and previously dubbed WVTG (Word Vector Topic Generator). This is a hack in progress I will present at the [2018 ELO conference](https://sites.grenadine.uqam.ca/sites/nt2/en/elo2018/schedule/444/Algorithmic+Invention).
 
 The repository contains the code and data necessary to invent responses to an assertion from Baudelaire's _Enivrez-vous_. Each word in the invented text is based on an analogy with the word pair _bien_ / _mal_ and on word vectors derived from 30 volumes written by Gustave Flaubert.
 
