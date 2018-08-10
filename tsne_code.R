@@ -6,7 +6,7 @@
 # Second column contains POS descriptor
 
 #data_for_r <- read.delim("NCF_short_author_Flaubert_tsne.tsv", header=FALSE)
-data_for_r <- read.delim("Russians_tsne.tsv", header=FALSE)
+data_for_r <- read.delim("RussianTrolls_tsne.tsv", header=FALSE)
 
 color=c("#114477", "#4477AA", "#77AADD", "#117755", "#44AA88", "#99CCBB",
         "#777711", "#AAAA44", "#DDDD77", "#771111", "#AA4444", "#DD7777",
