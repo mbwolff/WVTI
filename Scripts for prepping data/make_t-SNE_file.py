@@ -7,8 +7,10 @@
 
 import os, pickle, re, csv, gensim
 
-datadictfile = '../NCF_pos_dict.pkl'
-modelfile = '../../WVTM for ELO 2018/NCF_model'
+#datadictfile = '../NCF_pos_dict.pkl'
+datadictfile = '../Russians_pos_dict.pkl'
+#modelfile = '../../WVTM for ELO 2018/NCF_model'
+modelfile = '../Russians_model'
 
 filelabel = re.sub('_model$', '', modelfile)
 

@@ -22,5 +22,3 @@ Using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) to build a 
 [(u'reine', 0.8085041046142578)]
 ```
 If the word vector model is unable to complete an analogy, the word from the asserted text does not change in the invented text.
-
-Handling verb conjugations and adjective agreements computationally in French is tricky but the code produces a mostly readable text needing grammatical polishing (a good exercise for students). The code can generate a response to any asserted text with any pair of words.
