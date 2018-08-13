@@ -5,8 +5,8 @@
 # http://www.codeproject.com/Tips/788739/Visualization-of-High-Dimensional-Data-using-t-SNE
 # Second column contains POS descriptor
 
-#data_for_r <- read.delim("NCF_short_author_Flaubert_tsne.tsv", header=FALSE)
-data_for_r <- read.delim("RussianTrolls_tsne.tsv", header=FALSE)
+data_for_r <- read.delim("NCF_Flaubert_tsne.tsv", header=FALSE, quote="", fill=FALSE)
+#data_for_r <- read.delim("RussianTrolls_tsne.tsv", header=FALSE, quote="", fill=FALSE)
 
 color=c("#114477", "#4477AA", "#77AADD", "#117755", "#44AA88", "#99CCBB",
         "#777711", "#AAAA44", "#DDDD77", "#771111", "#AA4444", "#DD7777",
@@ -34,5 +34,5 @@ rtsne_out <- Rtsne(
   verbose=TRUE)
 
 plot(rtsne_out$Y, t="n", main="BarnesHut t-SNE")
-#text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, fr_pos)])
-text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, en_pos)])
+text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, fr_pos)])
+#text(rtsne_out$Y, labels=rownames(mydata), cex=0.5, col=color[match(mydata$V2, en_pos)])
